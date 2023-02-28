@@ -2,7 +2,7 @@ class: CommandLineTool
 cwlVersion: v1.0
 id: bcftools_normalize
 baseCommand:
-  - /usr/bin/bcftools
+  - /usr/local/bin/bcftools
   - norm
 inputs:
   - id: vcf

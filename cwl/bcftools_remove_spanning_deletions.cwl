@@ -2,7 +2,7 @@ class: CommandLineTool
 cwlVersion: v1.0
 id: bcftools_remove_spanning_deletions
 baseCommand:
-  - /usr/bin/bcftools
+  - /usr/local/bin/bcftools
   - view
 inputs:
   - id: vcf

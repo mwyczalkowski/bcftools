@@ -1,9 +1,9 @@
 source /opt/ibm/lsfsuite/lsf/conf/lsf.conf
 
 PWD=$(pwd)
-CWL="TinJasmine/cwl/bcftools_remove_spanning_deletions.cwl"
+CWL="../../../cwl/bcftools_remove_spanning_deletions.cwl"
 
-CONFIG="cromwell-config/cromwell-config-db.compute1-filedb.dat"
+CONFIG="../../cromwell-config/cromwell-config-db.compute1-filedb.dat"
 YAML="bcftools_remove_spanning_deletions.yaml"
 
 # Cromwell v78 
