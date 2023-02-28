@@ -1,13 +1,26 @@
-FROM python:3.7.13-buster
-# Note that bullseye currently does not work on compute1
+FROM ubuntu:xenial
+MAINTAINER Matthew Wyczalkowski <m.wyczalkowski@wustl.edu>
 
-WORKDIR /opt
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    bzip2 \
+    libbz2-dev \
+    liblzma-dev\
+    wget \
+    zlib1g-dev 
 
-RUN pip install PyVCF argparse pysam ConfigParser
-RUN apt-get update && apt-get install -y vim
-ENV PYTHONPATH="/usr/local/lib/python3.7/site-packages:/opt/VLD_FilterVCF/src"
+RUN wget https://github.com/samtools/bcftools/releases/download/1.17/bcftools-1.17.tar.bz2 \
+    && bunzip2 bcftools-1.17.tar.bz2 \
+    && tar -xf bcftools-1.17.tar \
+    && cd bcftools-1.17 \
+    && ./configure \
+    && make \
+    && make install
+
+# installs in /usr/local/bin/bcftools
+
 
 COPY docker/vimrc /root/.vimrc
-COPY . /opt/VLD_FilterVCF
+COPY . /opt/bcftools
 
-WORKDIR /opt/VLD_FilterVCF
+WORKDIR /opt/bcftools
