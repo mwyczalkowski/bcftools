@@ -1,7 +1,5 @@
 class: CommandLineTool
 cwlVersion: v1.0
-$namespaces:
-  sbg: 'https://www.sevenbridges.com/'
 id: bcftools_remove_spanning_deletions
 baseCommand:
   - /usr/bin/bcftools
@@ -31,5 +29,5 @@ requirements:
   - class: ResourceRequirement
     ramMin: 8000
   - class: DockerRequirement
-    dockerPull: 'biocontainers/bcftools:v1.9-1-deb_cv1'
+    dockerPull: 'mwyczalkowski/bcftools:20230228'
 

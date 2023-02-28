@@ -29,7 +29,7 @@ requirements:
     ResourceRequirement:
       ramMin: 8000
     DockerRequirement:
-      dockerPull: 'biocontainers/bcftools:v1.9-1-deb_cv1'
+      dockerPull: 'mwyczalkowski/bcftools:20230228'
     InitialWorkDirRequirement:
         listing:
           - entryname: samples.dat
