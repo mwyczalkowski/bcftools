@@ -1,12 +1,14 @@
 IMAGE="mwyczalkowski/cromwell-runner:v78"
 
 BCFTOOLS="/cache1/fs1/home1/Active/home/m.wyczalkowski/Projects/TinJasmine/TinJasmine-normalize/TinJasmine-dev/submodules/bcftools"
+REF="/storage1/fs1/m.wyczalkowski/Active/Primary/Resources/References/GRCh38.d1.vd1"
 
 VOLUME_MAPPING=" \
 /storage1/fs1/m.wyczalkowski/Active \
 /storage1/fs1/dinglab/Active \
 /scratch1/fs1/dinglab \
 $BCFTOOLS \
+$REF \
 "
 
 

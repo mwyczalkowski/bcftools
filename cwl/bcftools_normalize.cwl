@@ -18,7 +18,7 @@ outputs:
   - id: output
     type: File
     outputBinding:
-      glob: output.normalized.vcf.gz
+      glob: output.normalized.vcf
 label: bcftools_normalize
 arguments:
   - position: 5
@@ -32,6 +32,7 @@ arguments:
     valueFrom: output.normalized.vcf
   - position: 0
     prefix: ''
+    separate: false
     valueFrom: '-m-any'
 requirements:
   - class: ResourceRequirement
