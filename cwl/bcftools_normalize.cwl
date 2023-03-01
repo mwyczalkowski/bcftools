@@ -10,7 +10,7 @@ inputs:
     inputBinding:
       position: 20
   - id: reference
-    type: File
+    type: File?
     inputBinding:
       position: 1
       prefix: '-f'
@@ -29,11 +29,7 @@ arguments:
     valueFrom: w
   - position: 8
     prefix: '-o'
-    valueFrom: output.normalized.vcf
-  - position: 0
-    prefix: ''
-    separate: false
-    valueFrom: '-m-any'
+    valueFrom: output.normalized.vcf.gz
 requirements:
   - class: ResourceRequirement
     ramMin: 8000
