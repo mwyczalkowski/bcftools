@@ -4,7 +4,7 @@ id: fix_mleac
 label: fix_mleac
 baseCommand:
   - bash
-  - src/fix_MLEAC.sh
+  - /opt/bcftools/src/fix_MLEAC.sh
 inputs:
   - id: vcf
     type: File
