@@ -5,6 +5,14 @@ germline caller.
 
 ## Versions
 
+## Tools
+
+### `bcftools_normalize`
+
+```
+bcftools norm [-f REF] --multiallelics - --check-ref e -o output.norm.vcf.gz input.vcf.gz
+```
+
 
 ## Contact
 

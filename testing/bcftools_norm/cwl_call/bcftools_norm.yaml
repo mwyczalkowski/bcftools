@@ -1,6 +1,8 @@
 vcf:  # type "File"
     class: File
     path: /scratch1/fs1/dinglab/m.wyczalkowski/cromwell-data/cromwell-workdir/cromwell-executions/fix_MLEAC.cwl/e2d8d5bc-cbb7-4ea5-a880-805a44bdb3d0/call-fix_MLEAC.cwl/execution/data.fix_MLEAC.vcf
+
+# reference is optional
 reference:  # type "File"
     class: File
     path: /storage1/fs1/m.wyczalkowski/Active/Primary/Resources/References/GRCh38.d1.vd1/GRCh38.d1.vd1.fa

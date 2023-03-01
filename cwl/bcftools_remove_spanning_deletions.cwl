@@ -19,9 +19,6 @@ arguments:
   - position: 5
     prefix: '-e'
     valueFrom: 'ALT="*"'
-  - position: 6
-    prefix: '-O'
-    valueFrom: z
   - position: 7
     prefix: '-o'
     valueFrom: output.no_spanning_deletions.vcf.gz
