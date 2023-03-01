@@ -9,6 +9,11 @@ inputs:
     type: File
     inputBinding:
       position: 20
+  - id: reference
+    type: File
+    inputBinding:
+      position: 1
+      prefix: '-f'
 outputs:
   - id: output
     type: File
@@ -22,16 +27,14 @@ arguments:
   - position: 6
     prefix: '--check-ref'
     valueFrom: w
-  - position: 7
-    prefix: '-O'
-    valueFrom: z
   - position: 8
     prefix: '-o'
-    valueFrom: output.normalized.vcf.gz
+    valueFrom: output.normalized.vcf
+  - position: 0
+    prefix: ''
+    valueFrom: '-m-any'
 requirements:
   - class: ResourceRequirement
     ramMin: 8000
   - class: DockerRequirement
     dockerPull: 'mwyczalkowski/bcftools:20230228'
-
-
