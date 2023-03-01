@@ -1,6 +1,5 @@
 source /opt/ibm/lsfsuite/lsf/conf/lsf.conf
 
-PWD=$(pwd)
 CWL="../../../cwl/bcftools_remove_spanning_deletions.cwl"
 
 CONFIG="../../cromwell-config/cromwell-config-db.compute1-filedb.dat"
