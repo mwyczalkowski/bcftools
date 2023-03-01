@@ -1,10 +1,10 @@
 source /opt/ibm/lsfsuite/lsf/conf/lsf.conf
 
-BCFTOOLS="/cache1/fs1/home1/Active/home/m.wyczalkowski/Projects/TinJasmine/TinJasmine-normalize/multiallelic-spring2023/cwl_call/TinJasmine/submodules/bcftools"
-CWL="$BCFTOOLS/cwl/bcftools_reheader.cwl"
+BCFTOOLS="/cache1/fs1/home1/Active/home/m.wyczalkowski/Projects/TinJasmine/TinJasmine-normalize/TinJasmine-dev/submodules/bcftools"
+CWL="$BCFTOOLS/cwl/fix_MLEAC.cwl"
 
 CONFIG="$BCFTOOLS/testing/cromwell-config/cromwell-config-db.compute1-filedb.dat"
-YAML="bcftools_reheader_test.yaml"
+YAML="fix_MLEAC.yaml"
 
 # Cromwell v78 
 JAVA="/opt/java/openjdk/bin/java"

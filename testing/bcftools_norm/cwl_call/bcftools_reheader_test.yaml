@@ -1,4 +1,0 @@
-samples: ABCD_samplename
-vcf:  # type "File"
-    class: File
-    path: /storage1/fs1/m.wyczalkowski/Active/cromwell-data/cromwell-workdir/cromwell-executions/TinJasmine.v1.2.vep-100.cwl/9339f629-e8a9-4216-b34d-98ff2a008da3/call-bcftools_normalize_varscan_snp/execution/output.normalized.vcf.gz

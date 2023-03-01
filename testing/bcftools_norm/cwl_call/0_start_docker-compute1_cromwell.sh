@@ -1,6 +1,6 @@
 IMAGE="mwyczalkowski/cromwell-runner:v78"
 
-BCFTOOLS="/cache1/fs1/home1/Active/home/m.wyczalkowski/Projects/TinJasmine/TinJasmine-normalize/multiallelic-spring2023/cwl_call/TinJasmine/submodules/bcftools"
+BCFTOOLS="/cache1/fs1/home1/Active/home/m.wyczalkowski/Projects/TinJasmine/TinJasmine-normalize/TinJasmine-dev/submodules/bcftools"
 
 VOLUME_MAPPING=" \
 /storage1/fs1/m.wyczalkowski/Active \
