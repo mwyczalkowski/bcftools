@@ -27,6 +27,9 @@ arguments:
   - position: 6
     prefix: '--check-ref'
     valueFrom: w
+  - position: 7
+    prefix: '-O'
+    valueFrom: z
   - position: 8
     prefix: '-o'
     valueFrom: output.normalized.vcf.gz
