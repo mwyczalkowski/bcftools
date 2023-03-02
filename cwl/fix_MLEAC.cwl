@@ -22,4 +22,4 @@ requirements:
   - class: ResourceRequirement
     ramMin: 8000
   - class: DockerRequirement
-    dockerPull: 'mwyczalkowski/bcftools:20230228'
+    dockerPull: 'mwyczalkowski/bcftools:v1.10.2'
