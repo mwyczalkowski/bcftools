@@ -9,10 +9,16 @@ RUN apt-get update && apt-get install -y \
     wget \
     zlib1g-dev 
 
-RUN wget https://github.com/samtools/bcftools/releases/download/1.17/bcftools-1.17.tar.bz2 \
-    && bunzip2 bcftools-1.17.tar.bz2 \
-    && tar -xf bcftools-1.17.tar \
-    && cd bcftools-1.17 \
+# Below for v1.17
+#RUN wget https://github.com/samtools/bcftools/releases/download/1.17/bcftools-1.17.tar.bz2 \
+#    && bunzip2 bcftools-1.17.tar.bz2 \
+#    && tar -xf bcftools-1.17.tar \
+#    && cd bcftools-1.17 \
+
+RUN wget https://github.com/samtools/bcftools/releases/download/1.10.2/bcftools-1.10.2.tar.bz2 \
+    && bunzip2 bcftools-1.10.2.tar.bz2 \
+    && tar -xf bcftools-1.10.2.tar \
+    && cd bcftools-1.10.2 \
     && ./configure \
     && make \
     && make install
