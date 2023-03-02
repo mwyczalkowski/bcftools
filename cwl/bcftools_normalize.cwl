@@ -14,6 +14,13 @@ inputs:
     inputBinding:
       position: 1
       prefix: '-f'
+  - id: output_type
+    type: string
+    inputBinding:
+      position: 7
+      prefix: '-O'
+    label: Output type
+    doc: 'v for .vcf, z for .vcf.gz'
 outputs:
   - id: output
     type: File
@@ -27,9 +34,6 @@ arguments:
   - position: 6
     prefix: '--check-ref'
     valueFrom: w
-  - position: 7
-    prefix: '-O'
-    valueFrom: z
   - position: 8
     prefix: '-o'
     valueFrom: output.normalized.vcf.gz
