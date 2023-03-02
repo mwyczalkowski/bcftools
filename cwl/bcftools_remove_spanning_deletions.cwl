@@ -1,5 +1,7 @@
 class: CommandLineTool
 cwlVersion: v1.0
+$namespaces:
+  sbg: 'https://www.sevenbridges.com/'
 id: bcftools_remove_spanning_deletions
 baseCommand:
   - /usr/local/bin/bcftools
@@ -18,10 +20,13 @@ label: bcftools_remove_spanning_deletions
 arguments:
   - position: 5
     prefix: '-e'
-    valueFrom: 'ALT="*"'
+    valueFrom: ALT="*"
   - position: 7
     prefix: '-o'
     valueFrom: output.no_spanning_deletions.vcf.gz
+  - position: 0
+    prefix: '-O'
+    valueFrom: z
 requirements:
   - class: ResourceRequirement
     ramMin: 8000
