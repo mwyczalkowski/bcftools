@@ -25,6 +25,9 @@ arguments:
   - position: 2
     prefix: '--samples'
     valueFrom: samples.dat
+  - position: 3
+    prefix: '-O'
+    valueFrom: z
 requirements:
     ResourceRequirement:
       ramMin: 8000
